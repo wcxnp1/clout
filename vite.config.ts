@@ -10,6 +10,16 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
+  /// 可以去vite的官网查看服务器选项
+  server: {
+  //自动打开浏览器
+    open: true,
+    //端口号
+    port: 3460,
+    //主机号、
+    // host: '0.0.0.0',
+    host: 'localhost',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
